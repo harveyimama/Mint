@@ -36,8 +36,7 @@ public class Controller {
 
 		if (!verifyResponse.isSuccess())
 		{
-			verificationService.doHttpCall(formatBin(bin));
-			verifyResponse = verificationService.doDataBaseCheck(formatBin(bin));
+			verifyResponse = verificationService.doHttpCall(formatBin(bin));
 			
 		}
 		
